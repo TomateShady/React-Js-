@@ -1,6 +1,7 @@
 import React from "react";
+import "./clickcounter.css"
 
-function ItemCount ({}){
+function ItemCount (){
     let [count, setCount] = React.useState(1)
 
     function handleSuma(){
@@ -13,7 +14,7 @@ function ItemCount ({}){
 return (
  <div>
      <button onClick={handleResta} >-</button>
-     <span>{count}</span>
+     <span className="spanColor">{count}</span>
      <button onClick={handleSuma} >+</button>
      <br />
      <button>Agregar al carrito</button>

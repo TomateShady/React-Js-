@@ -12,6 +12,7 @@ function NavBar() {
                 <li>
                      <Link to="/category/Pelicula"> Peliculas </Link>
                 </li>
+                <span>/</span>
                 <li>
                      <Link to="/category/Serie">Series</Link>
                 </li>

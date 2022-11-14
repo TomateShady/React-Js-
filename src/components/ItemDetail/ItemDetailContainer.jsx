@@ -5,17 +5,16 @@ import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 
 function ItemDetailContainer() {
-    const [ data, setData ] = useState([]);
+    const [ data, setData ] = useState({});
     const { idItem } = useParams();
     console.log(useParams());
-    
-    async function getItemsAsync(){
+
+    useEffect(()=>{
+      async function getItemsAsync(){
         let respuesta = await getSingleItem(idItem);
         setData(respuesta);
     }
-
-    useEffect(() => { 
-      getItemsAsync();
+      getItemsAsync()
     },[idItem])
 
   return ( 

@@ -11,7 +11,7 @@
   }
   .card{
     color: #444444;
-    margin: 10px 15px;
+    margin: 10px auto 12px auto;
     min-height: 400px;
     width: 280px;
     height: 100%;
@@ -21,6 +21,7 @@
     overflow: hidden;  
     transition: all 0.20s ease-in;
     cursor: pointer;
+    padding: 12px;
   }
   
   .card:hover{

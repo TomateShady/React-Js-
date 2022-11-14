@@ -4,7 +4,7 @@ import MyButton from '../mybuttonFolder/MyButton';
 import { Link } from "react-router-dom";
 
 function Item({ imgurl , title , category , price, color, id}){
-  const urlDetail = `/detail/${id}-${title}`;
+  const urlDetail = `/detail/${id}`;
   return (
     <div className ="card">
         <div className = "card-img">

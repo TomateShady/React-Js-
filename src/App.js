@@ -13,8 +13,8 @@ function App() {
         <NavBar/>
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
-        <Route path="/category/:idCategory" element= { <ItemListContainer />} />      
-        <Route path="/detail/:id" element= { <ItemDetailContainer />} />      
+        <Route path='/category/:idCategory' element= { <ItemListContainer />} />      
+        <Route path='/detail/:idItem' element= { <ItemDetailContainer />} />      
         <Route path="*" element= { <h1>Error 404: Esta página no existe </h1>} />      
       </Routes>        
       </BrowserRouter>

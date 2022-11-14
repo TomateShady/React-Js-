@@ -4,7 +4,7 @@ const data = [
     "title": "Breaking Bad",
     "category": "Serie",
     "stock": 6,
-    "thumbnail": "/imgs/posterBB.jpg",
+    "thumbnail": "../imgs/posterBB.jpg",
     "price": 3400
   }, 
   {
@@ -12,7 +12,7 @@ const data = [
     "title": "Mr. Robot",
     "category": "Serie",
     "stock": 8,
-    "thumbnail": "/imgs/posterMrRobot.jpg",
+    "thumbnail": "../imgs/posterMrRobot.jpg",
     "price": 2500
   },
    {
@@ -20,7 +20,7 @@ const data = [
     "title": "The Walking Dead",
     "category": "Serie",
     "stock": 7,
-    "thumbnail": "/imgs/posterTWD.jpg",
+    "thumbnail": "../imgs/posterTWD.jpg",
     "price": 4500
   },
    {
@@ -28,7 +28,7 @@ const data = [
     "title": "Westworld",
     "category": "Serie",
     "stock": 5,
-    "thumbnail": "/imgs/posterWestworld.jpg",
+    "thumbnail": "../imgs/posterWestworld.jpg",
     "price": 2500
   },
   {
@@ -36,7 +36,7 @@ const data = [
     "title": "Joker",
     "category": "Pelicula",
     "stock": 9,
-    "thumbnail": "/imgs/posterJoker.jpg",
+    "thumbnail": "../imgs/posterJoker.jpg",
     "price": 1500
   },
    {
@@ -44,7 +44,7 @@ const data = [
     "title": "Black Swan",
     "category": "Pelicula",
     "stock": 5,
-    "thumbnail": "/imgs/posterBS.jpg",
+    "thumbnail": "../imgs/posterBS.jpg",
     "price": 1500
   },
    {
@@ -52,7 +52,7 @@ const data = [
     "title": "The Dark Knight",
     "category": "Pelicula",
     "stock": 6,
-    "thumbnail": "/imgs/posterTDK.jpg",
+    "thumbnail": "../imgs/posterTDK.jpg",
     "price": 1500
   },
    {
@@ -60,7 +60,7 @@ const data = [
     "title": "Moonlight",
     "category": "Pelicula",
     "stock": 4,
-    "thumbnail": "/imgs/posterMoonlight.jpg",
+    "thumbnail": "../imgs/posterMoonlight.jpg",
     "price": 1500
   }
   
