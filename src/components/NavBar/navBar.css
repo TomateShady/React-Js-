@@ -1,5 +1,5 @@
 #navegador {
-    background-color: black;
+    background-color: #000000;
     display: inline-flex;
     overflow: hidden;
     flex-direction: row;
@@ -13,10 +13,11 @@
 h2 {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: #ffffff;
     display: inline;
     padding: 10px;
     margin: 10px 10px;
+    text-decoration: none;
 }
 
 .navGroupList{
@@ -33,7 +34,7 @@ h2 {
 }
 
 .listaPeliculas a{
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;

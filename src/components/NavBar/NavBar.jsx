@@ -1,21 +1,22 @@
 import React from 'react';
 import CartWidget from './CartWidget';
 import './navBar.css';
+import {Link} from "react-router-dom";
 
 function NavBar() {
   return (
     <nav id='navegador'>
-         <h2>MI TIENDA</h2>
+          <Link to="/"><h2>MI TIENDA</h2></Link>
         <div className="navGroupList">
             <ul className="listaPeliculas">
                 <li>
-                    <a href="/">Peliculas</a>
+                     <Link to="/category/Pelicula"> Peliculas </Link>
                 </li>
                 <li>
-                    <a href="/">Series</a>
+                     <Link to="/category/Serie">Series</Link>
                 </li>
                 <li>
-                <a href="#"><CartWidget counter="0" /> </a>
+                     <CartWidget />
                 </li>
             </ul>
         </div>
@@ -23,4 +24,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default NavBar;
