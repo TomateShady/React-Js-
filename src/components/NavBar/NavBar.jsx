@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 function NavBar() {
   return (
     <nav id='navegador'>
-          <Link to="/"><h2>MI TIENDA</h2></Link>
+          <Link to="/"><h2>QUENTIN'S</h2></Link>
         <div className="navGroupList">
             <ul className="listaPeliculas">
                 <li>

@@ -10,7 +10,7 @@ button{
     text-decoration: none;
 }
 button:hover{
-    background: greenyellow;
+    background: violet;
 }
 .spanColor {
     color: black;

@@ -3,19 +3,24 @@ import React from 'react'
 import { getSingleItem } from "../../Services/mockService";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 function ItemDetailContainer() {
     const [ data, setData ] = useState({});
+    const [isLoading, setIsLoading] = useState(true);
     const { idItem } = useParams();
-    console.log(useParams());
 
     useEffect(()=>{
       async function getItemsAsync(){
         let respuesta = await getSingleItem(idItem);
         setData(respuesta);
+        setIsLoading(false);
     }
       getItemsAsync()
     },[idItem])
+
+  if (isLoading)
+  return(<Loader/>)
 
   return ( 
   <ItemDetail data={data} />
