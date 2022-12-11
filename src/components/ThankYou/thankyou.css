@@ -1,0 +1,12 @@
+.gracias{
+   text-align: center;
+   margin: 15px auto 10px auto;
+}
+.gracias h1{
+    font-size: 32px;
+    color: black;
+}
+.gracias h3{
+    font-size: 28;
+    text-decoration: underline;
+}

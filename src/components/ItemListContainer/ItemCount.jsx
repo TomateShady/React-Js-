@@ -1,5 +1,4 @@
 import React from "react";
-import "./itemCount.css"
 import { useState } from "react";
 
 function ItemCount ({ stock, onAddToCart }){
@@ -14,15 +13,15 @@ function ItemCount ({ stock, onAddToCart }){
 
 return (
  <div>
-     <button onClick={handleResta}>
+     <button className="btn" onClick={handleResta}>
          -
      </button>
      <span className="spanColor">{count}</span>
-     <button onClick={handleSuma}>
+     <button className="btn" onClick={handleSuma}>
          +
      </button>
      <br />
-     <button onClick={() => onAddToCart(count)}>
+     <button className="btnVerMas" onClick={() => onAddToCart(count)}>
          Agregar al carrito
      </button>
  </div>

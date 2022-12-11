@@ -25,23 +25,27 @@ export function CartContextProvider({children}) {
     function itemsInCart (){
         let total = 0;
         cart.forEach( itemInCart => total = total + itemInCart.count)
-        return total
+        return total;
     }
 
     function clear (){
-        setCart([]);
+        return setCart([]);
     }
 
+    const removeItem = (id) => {
+        setCart(cart.filter((item)=> item.id !== id))
+    }
+   
     function priceInCart(){
         let totalPrice = 0;
         cart.forEach((data) =>
-            (totalPrice = totalPrice + data.price * data.cantidad)
+            (totalPrice = totalPrice + (data.price * data.cantidad))
         );
         return totalPrice;
     }
 
     return (
-        <cartContext.Provider value={ {cart, itemsInCart, addToCart, clear, priceInCart} }>
+        <cartContext.Provider value={ {cart, itemsInCart, addToCart, clear, priceInCart, removeItem} }>
          {children}
          </cartContext.Provider>
      )
